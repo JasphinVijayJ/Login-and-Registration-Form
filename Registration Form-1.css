@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.container{
+    background-color: white;
+    border-radius: 6px;
+    padding: 0 30px 30px 30px;
+    width: 600px;
+}
+h1{
+    text-align: center;
+}
+span{
+    background-image: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    /* Some browsers ignore it without -webkit- */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.form-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-container > div > input{
+    width: 250px;
+    padding: 8px;
+    margin: 8px 0 15px 0;
+    border-style: dashed;
+    border-color: #12c2e9 #c471ed #f64f59;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 1px 1px 6px lightgray;
+}
+
+.bottom-container > label{
+    margin-top: 15px;
+}
+.gender-group{
+    margin-top: 8px;
+}
+.gender-group > label{
+    margin-right:40px;
+}
+
+.button-1{
+    color: white;
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+.button-1:hover{
+    background: linear-gradient(to right, #c471ed, #f64f59, #12c2e9);
+    box-shadow: 1px 1px 8px rgba(196, 113, 237, 0.6);
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+
+/* Responsive Code */
+
+/* For Mobile */
+@media screen and (max-width:450px){
+    body{
+        width: 700px;
+        height: 130vh;
+    }
+    .form-container > div > label{
+        font-size: 20px;
+    }
+    .form-container > div > input{
+        font-size: 18px;
+        padding: 14px;
+        margin: 12px 0 25px 0;
+    }
+    .bottom-container > label{
+        font-size: 20px;
+    }
+    .gender-group{
+        margin-top: 12px;
+    }
+    .gender-group > label{
+        font-size: 18px;
+    }
+    .button-1{
+        padding: 14px;
+        font-size: 20px;
+    }
+}
+
+/* For Tablet */
+@media screen and (min-width:450px) and (max-width:900px){
+    body{
+        width: 800px;
+        height: 100vh;
+    }
+    .form-container > div > input{
+        font-size: 15px;
+        padding: 14px;
+    }
+    .button-1{
+        padding: 14px;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+}
+
+/* For Laptop */
+/* @media screen and (min-width:900px) and (max-width:1200px) {
+    
+} */

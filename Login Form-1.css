@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.container{
+    background-color: white;
+    width: 500px;
+    padding: 30px 50px 50px 50px;
+    border-radius: 6px;
+}
+
+h1{
+    text-align: center;
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    /* Some browsers ignore it without -webkit- */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+}
+
+.top-form-container > input{
+    width: 450px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-style: dashed;
+    border-color: #12c2e9 #c471ed #f64f59;
+    outline: none;
+    box-shadow: 1px 1px 6px lightgray;
+}
+
+.para-1{
+    text-align: end;
+    margin-top: -10px;
+}
+
+.button-1{
+    color: white;
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.button-1:hover{
+    background: linear-gradient(to right, #c471ed, #f64f59, #12c2e9);
+    box-shadow: 1px 1px 8px rgba(196, 113, 237, 0.6);
+}
+
+.bottom-form-container{
+    text-align: center;
+}
+
+.icon-group{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: -15px;
+}
+
+.icon-group > div > p{
+    color: white;
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    padding: 4px;
+    border-radius: 6px;
+}
+
+.para-3 b{
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    /* Some browsers ignore it without -webkit- */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
