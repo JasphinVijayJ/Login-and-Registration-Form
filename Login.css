@@ -82,14 +82,11 @@ h1{
     border-radius: 6px;
 }
 
-.para-3 b{
+.para-3 > a{
+    text-decoration: none;
     background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
     /* Some browsers ignore it without -webkit- */
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-}
-
-a{
-    text-decoration: none;
 }
