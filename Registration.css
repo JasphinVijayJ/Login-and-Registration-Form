@@ -73,6 +73,19 @@ span{
     box-shadow: 1px 1px 8px rgba(196, 113, 237, 0.6);
 }
 
+.para{
+    text-align: center;
+}
+
+.para > a{
+    text-decoration: none;
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    /* Some browsers ignore it without -webkit- */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 /* ----------------------------------------------------------------------------------------------- */
 
 /* Responsive Code */
